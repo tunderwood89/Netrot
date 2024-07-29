@@ -5,9 +5,9 @@ body {
   text-align: center;
   margin: 10px auto;
   transition: background-color 0.3s, color 0.3s;
-  h1 {
-    text-align: center;
-  }
+}
+h1 {
+  text-align: center;
 }
 .box-header {
   border: 3px solid black;
@@ -22,22 +22,22 @@ body {
   flex-direction: row;
   gap: 10px;
   padding: 0px 10%;
+  p {
+    text-align: left;
+  }
 }
 .box {
   border: 3px solid black;
   border-radius: 30px;
   color: #000000;
   padding: 10px;
-  h1 {
-    text-align: center;
-  }
-  p {
-  text-align: left;
-  }
-  img {
-    width: 30px;
-    height: 30px;
-  }
+}
+p {
+  text-align: center;
+}
+img {
+  width: 30px;
+  height: 30px;
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -67,7 +67,8 @@ body {
     text-decoration: underline;
   }
   #share-icon {
-      content: url('share_white.svg');
+    content: url('share_white.svg');
+    cursor: pointer;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -98,11 +99,15 @@ body {
     text-decoration: underline;
   }
   #share-icon {
-      content: url('share_black.svg');
+    content: url('share_black.svg');
+    cursor: pointer;
   }
 }
 #icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#url-text {
+  cursor: pointer;
 }

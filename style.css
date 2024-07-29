@@ -1,0 +1,108 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  padding: 0px;
+  text-align: center;
+  margin: 10px auto;
+  transition: background-color 0.3s, color 0.3s;
+  h1 {
+    text-align: center;
+  }
+}
+.box-header {
+  border: 3px solid black;
+  border-radius: 30px;
+  color: #000000;
+  margin: 0px 10%;
+  text-align: center;
+}
+.boxes {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0px 10%;
+}
+.box {
+  border: 3px solid black;
+  border-radius: 30px;
+  color: #000000;
+  padding: 10px;
+  h1 {
+    text-align: center;
+  }
+  p {
+  text-align: left;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #000000;
+    color: #fff;
+  }
+  body {
+    background-color: #000000;
+    color: #fff;
+  }
+  .box-header {
+    background-color: #000000;
+    color: #fff;
+    border: 3px solid white;
+  }
+  .box {
+    background-color: #000000;
+    color: #fff;
+    border: 3px solid white;
+  }
+  a {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #share-icon {
+      content: url('share_white.svg');
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .box-header {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid black;
+  }
+  .box {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid black;
+  }
+  a {
+    text-decoration: underline;
+    color: #000000;
+  }
+  a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  #share-icon {
+      content: url('share_black.svg');
+  }
+}
+#icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

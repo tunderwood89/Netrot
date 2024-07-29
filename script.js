@@ -18,11 +18,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
     // Copy text to clipboard when the paragraph is clicked
     urlText.addEventListener('click', function () {
-        const textToCopy = "https://example.com"; // The custom text you want to copy
+        const textToCopy = "https://netrot.pages.dev/"; // The custom text you want to copy
         navigator.clipboard.writeText(textToCopy).then(() => {
             alert('URL copied to clipboard: ' + textToCopy);
         }).catch(err => {
             console.error('Failed to copy text: ', err);
         });
+    });
+});
+    // Open the share menu when the share icon is clicked
+    icon.addEventListener('click', function () {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Netrot',
+                text: 'A website exploring the collapse of the World Wide Web.',
+                url: 'https://netrot.pages.dev/'
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch(err => {
+                console.error('Could not share:', err);
+            });
+        } else {
+            alert('Web Share API is not supported in this browser.');
+        }
     });
 });
